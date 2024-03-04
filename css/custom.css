@@ -1,0 +1,161 @@
+
+@media only screen and (max-width: 800px){
+    *{
+        color:bisque;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    height: 100px;
+    background-color: #D10000;
+    border: 1px solid #CCC;
+    position: relative;
+  }
+  
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #FB4B4E;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.div2 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+body .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .menu a {
+    color: white;
+  }
+  
+  .menu .titre {
+    font-size: 2em;
+    font-weight: Bold;
+  }
+  
+  .menu .nav-links ul {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .menu .nav-links ul li {
+    display: flex;
+    margin: 0 25px;
+  }
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: #828282;
+    bottom: 0;
+}
+
+footer .titre {
+    text-align: center;
+}
+
+footer .easteregg {
+    text-align: center;
+    color: #1a1a1a
+}
+
+footer .easteregg:hover {
+    color: yellow;
+}
+
+footer .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulaire {
+    text-align: center;
+    align-items: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+h3 {
+    background-color: #FB4B4E;
+}
+
+fieldset {
+    background-color: #FFCBDD;
+}
+
+input {
+    background-color: #FFCBDD;
+}
+
+p {
+    background-color: #FB4B4E;
+    display: none;
+}
+
+
+p:target {
+    display: block;
+}
+
+
+fieldset {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
